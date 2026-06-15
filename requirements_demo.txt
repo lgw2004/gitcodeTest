@@ -1,0 +1,17 @@
+# LangChain & RAG Demo 依赖
+# 安装命令: pip install -r requirements_demo.txt
+
+# LangChain 核心
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+
+# RAG 相关: 本地向量库 + 嵌入模型
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+
+# PDF / 文档解析 (可选)
+pypdf>=4.0.0
+
+# 如果你有 OpenAI API Key，取消下面这行注释即可用真实 LLM
+# langchain-openai>=0.2.0

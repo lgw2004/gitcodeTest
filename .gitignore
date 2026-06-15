@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# Demo 生成的数据
+chroma_db_demo/
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.DS_Store
+Thumbs.db
