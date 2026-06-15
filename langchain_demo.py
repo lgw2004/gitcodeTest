@@ -62,7 +62,7 @@ class MockLLM:
     """
 
     def __call__(self, prompt, **kwargs):
-        """让 MockLLM 可被调用，兼容 LCEL 管道符 | 语法"""
+        
         return self.invoke(prompt, **kwargs)
 
     def invoke(self, prompt, **kwargs):
@@ -84,7 +84,6 @@ class MockLLM:
             jokes = [
                 "为什么程序员总是分不清万圣节和圣诞节？因为 Oct 31 == Dec 25！",
                 "一个 SQL 查询走进酒吧，看到两张表，问：'我可以 JOIN 你们吗？'",
-                "程序员最讨厌的数字是什么？1024，因为它是 2 的 10 次方，但总被人当成 1000。",
             ]
             return AIMessage(content=random.choice(jokes))
 
